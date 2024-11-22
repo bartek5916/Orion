@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/SidebarButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/SidebarButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/SidebarButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/SidebarButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,7 @@
       <workItem from="1732218085227" duration="13044000" />
       <workItem from="1732263637269" duration="2950000" />
       <workItem from="1732266846177" duration="9942000" />
-      <workItem from="1732290924465" duration="9552000" />
+      <workItem from="1732290924465" duration="15412000" />
     </task>
     <servers />
   </component>
