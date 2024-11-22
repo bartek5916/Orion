@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import ButtonGradient from "../Buttons/ButtonGradient";
 import NormalButton from "../Buttons/NormalButton";
+import RoundedButton from "../Buttons/RoundedButton";
 
 function Navbar() {
     return (
@@ -25,16 +26,8 @@ function Navbar() {
                         <ButtonGradient text="Rejestracja"/>
                     </div>
                     <div className="navbar-right-corner">
-                        <div className="profile-logo">
-                            <button className="profile-button">
-                                <img src="/assets/images/navbar/profile-picture.png" alt="profile-icon"/>
-                            </button>
-                        </div>
-                        <div className="settings-logo">
-                            <button className="settings-button">
-                                <img src="/assets/images/navbar/settings-icon2.png" alt="settings-icon"/>
-                            </button>
-                        </div>
+                        <RoundedButton src="/assets/images/navbar/profile-picture.png"/>
+                        <RoundedButton src="/assets/images/navbar/settings-icon2.png"/>
                     </div>
                 </div>
             </nav>

@@ -66,28 +66,6 @@ html, body {
     flex-wrap: wrap;
 }
 
-.profile-logo {}
-
-.settings-button, .profile-button {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    background-color: #3B0365FF;
-}
-
-.settings-button img, .profile-logo img {
-    scale: 50%;
-}
-
-.settings-button:hover, .profile-button:hover {
-    scale: 1.05;
-    background-color: #49037EFF;
-}
 
 @media (max-width: 1168px) {
     .navbar-center-left {

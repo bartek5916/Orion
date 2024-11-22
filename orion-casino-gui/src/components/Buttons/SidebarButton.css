@@ -1,9 +1,13 @@
 .sidebar-button {
-    display: flex;
-    align-items: center;
-    background-color: #2e1534;
-    border-radius: 15%;
     color: white;
-    margin: 2% 0;
-    cursor: pointer;
+    background-color: #3B0365FF;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+    font-weight: 400;
+    font-size: 15px;
+    text-indent: 10px;
 }

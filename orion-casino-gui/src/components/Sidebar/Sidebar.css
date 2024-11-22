@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: row;
     background-color: #19002A;
-    width: 18%;
+    width: 400px;
     max-width: 18%;
     height: 100%;
     position: fixed;
-    top: 8%;
+    top: 80px;
 }
 
 .main-tiles{
     display: block;
+    padding: 6px 8px 6px 16px;
 }

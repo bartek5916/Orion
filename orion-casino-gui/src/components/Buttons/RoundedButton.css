@@ -1,0 +1,20 @@
+.img-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #3B0365FF;
+}
+
+.rounded-button img {
+    scale: 50%;
+}
+
+.img-button:hover {
+    scale: 1.05;
+    background-color: #49037EFF;
+}

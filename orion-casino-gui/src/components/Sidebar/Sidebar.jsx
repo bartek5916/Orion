@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import SidebarButton from "../Buttons/SidebarButton";
+import ButtonGradient from "../Buttons/ButtonGradient";
 
 function Sidebar() {
     return (
@@ -9,10 +10,18 @@ function Sidebar() {
                 <div className="sidebar-container">
                     <div className="main-tiles">
                         <ol>
-                            {/*<SidebarButton text="Sloty"/>
-                            <SidebarButton text="Depozyt"/>*/}
+                            <SidebarButton text="Sloty"/>
                         </ol>
                     </div>
+
+                    <div className="support-button">
+                        <SidebarButton text="Support"/>
+                    </div>
+
+                    <div className="deposit-button">
+                        <ButtonGradient text="Depozyt"/>
+                    </div>
+
                 </div>
             </nav>
         </>
