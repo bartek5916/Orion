@@ -3,7 +3,10 @@
     font-weight: 500;
     font-size: 15px;
     color: white;
-    padding: 12px 30px;
+    text-align: center;
+    align-content: center;
+    height: 42px;
+    width: 134px;
     border-radius: 30px;
     cursor: pointer;
     background-color: #19002A;

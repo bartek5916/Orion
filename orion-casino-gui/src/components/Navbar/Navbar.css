@@ -10,27 +10,34 @@ html, body {
     z-index: 1000;
 }
 
-.navbar-container{
-    display: inline-flex;
+.navbar-container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 80px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-.navbar-left-corner{
+.navbar-left-corner {
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 2%;
+    margin-left: 0;
 }
 
-.navbar-left-corner:hover{
+.navbar-left-corner:hover {
     cursor: pointer;
 }
 
-.search-input{
+.navbar-center-left {
+    display: flex;
+    margin-right: 25%;
+}
+
+.search-input {
     color: white;
     background-color: #3B0365FF;
     border: none;
@@ -42,26 +49,28 @@ html, body {
     text-indent: 10px;
 }
 
-.navbar-center-right{
+.navbar-center-right {
     display: inline-flex;
     justify-content: space-between;
-    gap: 5px;
-    margin-left: 28%;
+    gap: 15px;
+    margin-left: 0;
+    flex-wrap: wrap;
 }
 
-.navbar-right-corner{
+.navbar-right-corner {
     display: inline-flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-    margin-right: 2%;
+    margin-right: 0;
+    flex-wrap: wrap;
 }
 
-.profile-logo{
-}
+.profile-logo {}
 
-.settings-button, .profile-button{
+.settings-button, .profile-button {
     width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,11 +79,36 @@ html, body {
     cursor: pointer;
     background-color: #3B0365FF;
 }
-.settings-button img, .profile-logo img{
+
+.settings-button img, .profile-logo img {
     scale: 50%;
 }
 
-.settings-button:hover, .profile-button:hover{
+.settings-button:hover, .profile-button:hover {
     scale: 1.05;
     background-color: #49037EFF;
+}
+
+@media (max-width: 1168px) {
+    .navbar-center-left {
+        margin-right: 14%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .search-input {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-center-right {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-right-corner {
+        display: none;
+    }
 }
