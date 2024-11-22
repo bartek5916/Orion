@@ -10,7 +10,7 @@ function Sidebar() {
                 <div className="sidebar-container">
                     <div className="main-tiles">
                         <ol>
-                            <SidebarButton text="Sloty"/>
+                            <SidebarButton text="O nas" icon="/assets/images/sidebar/about-us.png"/>
                         </ol>
                     </div>
 

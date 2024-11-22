@@ -1,13 +1,28 @@
 .sidebar-button {
-    color: white;
-    background-color: #3B0365FF;
+    display: flex;
+    color: #9e9a9a;
+    background-color: #220d33;
     border: none;
     border-radius: 50px;
     width: 300px;
     height: 40px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.sidebar-button:hover {
+    scale: 1.05;
+}
+
+.text{
     font-family: 'Roboto', sans-serif;
-    align-content: center;
     font-weight: 400;
     font-size: 15px;
-    text-indent: 10px;
+    align-content: center;
+}
+
+.custom-rounded-button {
+    scale: 0.7;
+    pointer-events: none;
+    margin-left: -5px;
 }

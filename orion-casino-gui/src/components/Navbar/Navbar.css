@@ -37,9 +37,14 @@ html, body {
     margin-right: 25%;
 }
 
+::placeholder {
+    color: #9e9a9a;
+    opacity: 1;
+}
+
 .search-input {
-    color: white;
-    background-color: #3B0365FF;
+    color: #9e9a9a;
+    background-color: #220d33;
     border: none;
     border-radius: 50px;
     width: 300px;
