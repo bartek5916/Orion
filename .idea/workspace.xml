@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,7 +43,7 @@
     &quot;Node.js.www.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Node.js/node.exe&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Pobrane/Foldery pulpitowe/studia/TIN/Orion/orion-casino-gui/public/assets/images/navbar&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -59,6 +56,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images\navbar" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images\navbar" />
       <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images" />
@@ -83,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1732211446667</updated>
       <workItem from="1732211447752" duration="6524000" />
-      <workItem from="1732218085227" duration="12629000" />
+      <workItem from="1732218085227" duration="13044000" />
+      <workItem from="1732263637269" duration="2950000" />
+      <workItem from="1732266846177" duration="4736000" />
     </task>
     <servers />
   </component>

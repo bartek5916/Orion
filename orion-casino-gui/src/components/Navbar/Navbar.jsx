@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.css';
+import ButtonGradient from "../Buttons/ButtonGradient";
+import NormalButton from "../Buttons/NormalButton";
 
 function Navbar() {
     return (
@@ -16,15 +18,22 @@ function Navbar() {
                         </div>
                     </div>
                     <div className="navbar-center-left">
-
+                        <input type="text" className="search-input" placeholder="Wyszukaj"></input>
                     </div>
                     <div className="navbar-center-right">
-                        <button className="login-button">Zaloguj się</button>
-                        <button className="signup-button">Rejestracja</button>
+                        <NormalButton text="Zaloguj się"/>
+                        <ButtonGradient text="Rejestracja"/>
                     </div>
                     <div className="navbar-right-corner">
                         <div className="profile-logo">
-
+                            <button className="profile-button">
+                                <img src="/assets/images/navbar/profile-picture.png" alt="profile-icon"/>
+                            </button>
+                        </div>
+                        <div className="settings-logo">
+                            <button className="settings-button">
+                                <img src="/assets/images/navbar/settings-icon2.png" alt="settings-icon"/>
+                            </button>
                         </div>
                     </div>
                 </div>
