@@ -1,0 +1,9 @@
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    background-color: #2e1534;
+    border-radius: 15%;
+    color: white;
+    margin: 2% 0;
+    cursor: pointer;
+}

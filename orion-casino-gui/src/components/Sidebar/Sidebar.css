@@ -1,0 +1,14 @@
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: #19002A;
+    width: 18%;
+    max-width: 18%;
+    height: 100%;
+    position: fixed;
+    top: 8%;
+}
+
+.main-tiles{
+    display: block;
+}
