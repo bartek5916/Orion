@@ -1,22 +1,36 @@
 .sidebar {
-    display: flex;
-    background-color: #19002A;
-    width: 400px;
+    width: 18%;
     max-width: 18%;
-    height: 100%;
-    position: fixed;
+    height: 90vh;
 }
 
-.main-tiles ol {
+.sidebar-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.main-tiles {
+    margin-top: 5%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin-left: -20px;
-    margin-top: 25px;
+    width: 300px;
+    height: 325px;
+    row-gap: 7px;
 }
 
 .free-spin-button {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
     color: black;
     background: linear-gradient(90deg, #bced4e, #81b040);
     border: none;
@@ -24,10 +38,6 @@
     width: 300px;
     height: 80px;
     cursor: pointer;
-    align-items: center;
-    margin-left: 20px;
-    justify-content: center;
-    margin-top: 25px;
 }
 .free-spin-button:hover{
     scale: 1.05;
@@ -43,11 +53,12 @@
 }
 
 .bottom-tiles {
-    margin-left: 20px;
+    position: absolute;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
     width: 300px;
-    height: 120px;
-    margin-top: 90%;
-}
-.deposit-button{
-    margin-top: 7px;
+    row-gap: 7px;
+    height: 137px;
+    bottom: 0;
 }

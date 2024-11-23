@@ -18,26 +18,24 @@ function Sidebar() {
                     </div>
 
                     <div className="main-tiles">
-                        <ol>
-                            <div className="popular-games">
-                                <SidebarButton text="Popularne gry" icon="/assets/images/sidebar/popular-icon.png"/>
-                            </div>
-                            <div className="new-games">
-                                <SidebarButton text="Nowe gry" icon="/assets/images/sidebar/new-games.png"/>
-                            </div>
-                            <div className="facourite-games">
-                                <SidebarButton text="Ulubione gry" icon="/assets/images/sidebar/favourite-icon.png"/>
-                            </div>
-                            <div className="deposit">
-                                <SidebarButton text="Depozyt" icon="/assets/images/sidebar/deposit-icon.png"/>
-                            </div>
-                            <div className="leaderboard">
-                                <SidebarButton text="Ranking" icon="/assets/images/sidebar/ranking-icon.png"/>
-                            </div>
-                            <div className="about-us">
-                                <SidebarButton text="O nas" icon="/assets/images/sidebar/about-us.png"/>
-                            </div>
-                        </ol>
+                        <div className="popular-games">
+                            <SidebarButton text="Popularne gry" icon="/assets/images/sidebar/popular-icon.png"/>
+                        </div>
+                        <div className="new-games">
+                            <SidebarButton text="Nowe gry" icon="/assets/images/sidebar/new-games.png"/>
+                        </div>
+                        <div className="facourite-games">
+                            <SidebarButton text="Ulubione gry" icon="/assets/images/sidebar/favourite-icon.png"/>
+                        </div>
+                        <div className="deposit">
+                            <SidebarButton text="Depozyt" icon="/assets/images/sidebar/deposit-icon.png"/>
+                        </div>
+                        <div className="leaderboard">
+                            <SidebarButton text="Ranking" icon="/assets/images/sidebar/ranking-icon.png"/>
+                        </div>
+                        <div className="about-us">
+                            <SidebarButton text="O nas" icon="/assets/images/sidebar/about-us.png"/>
+                        </div>
                     </div>
 
                     <div className="bottom-tiles">

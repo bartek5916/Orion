@@ -1,21 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar {
-    background-color: #19002A;
     width: 100%;
     z-index: 1000;
 }
 
 .navbar-container {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
-    padding: 0 15px;
+    height: 100%;
+    padding: 5px 15px;
     box-sizing: border-box;
 }
 
@@ -24,7 +19,7 @@ html, body {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 0;
+    left: 10px;
 }
 
 .navbar-left-corner:hover {
