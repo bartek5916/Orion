@@ -23,7 +23,7 @@ function Navbar() {
                     </div>
                     <div className="navbar-center-right">
                         <NormalButton text="Zaloguj się"/>
-                        <ButtonGradient text="Rejestracja"/>
+                        <ButtonGradient width="134px" height="42px" color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="Rejestracja"/>
                     </div>
                     <div className="navbar-right-corner">
                         <RoundedButton src="/assets/images/navbar/profile-picture.png"/>

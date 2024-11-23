@@ -19,7 +19,7 @@ function Sidebar() {
 
                     <div className="main-tiles">
                         <ol>
-                        <div className="popular-games">
+                            <div className="popular-games">
                                 <SidebarButton text="Popularne gry" icon="/assets/images/sidebar/popular-icon.png"/>
                             </div>
                             <div className="new-games">
@@ -43,7 +43,9 @@ function Sidebar() {
                     <div className="support-button">
                         <SidebarButton text="Wsparcie" icon="/assets/images/sidebar/faq-icon.png"/>
                     </div>
-
+                    <div className="deposit-button">
+                        <ButtonGradient text="DEPOZYT"/>
+                    </div>
                 </div>
             </nav>
         </>

@@ -5,12 +5,9 @@
     color: white;
     text-align: center;
     align-content: center;
-    height: 42px;
-    width: 134px;
     border-radius: 30px;
     cursor: pointer;
     border: none;
-    background: linear-gradient(90deg, #ce63f3, #6D0DB6FF);
 }
 
 .button-gradient:hover {

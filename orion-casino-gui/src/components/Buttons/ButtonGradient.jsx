@@ -1,9 +1,15 @@
 import React from 'react';
 import './ButtonGradient.css';
 
-function ButtonGradient(props) {
+function ButtonGradient({width, height, color, text}) {
+    const buttonStyle = {
+        width: width,
+        height: height,
+        background: color,
+    }
+
     return (
-        <div className="button-gradient">{props.text}</div>
+        <div className="button-gradient" style={buttonStyle}>{text}</div>
     );
 }
 
