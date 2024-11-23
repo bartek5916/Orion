@@ -40,11 +40,14 @@ function Sidebar() {
                         </ol>
                     </div>
 
-                    <div className="support-button">
-                        <SidebarButton text="Wsparcie" icon="/assets/images/sidebar/faq-icon.png"/>
-                    </div>
-                    <div className="deposit-button">
-                        <ButtonGradient text="DEPOZYT"/>
+                    <div className="bottom-tiles">
+                        <div className="support-button">
+                            <SidebarButton text="Wsparcie" icon="/assets/images/sidebar/faq-icon.png"/>
+                        </div>
+                        <div className="deposit-button">
+                            <ButtonGradient width="300px" height="80px"
+                                            color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="DEPOZYT"/>
+                        </div>
                     </div>
                 </div>
             </nav>

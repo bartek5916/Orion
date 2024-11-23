@@ -3,6 +3,7 @@ import './Navbar.css';
 import ButtonGradient from "../Buttons/ButtonGradient";
 import NormalButton from "../Buttons/NormalButton";
 import RoundedButton from "../Buttons/RoundedButton";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar() {
     return (
@@ -19,7 +20,7 @@ function Navbar() {
                         </div>
                     </div>
                     <div className="navbar-center-left">
-                        <input type="text" className="search-input" placeholder="Wyszukaj"></input>
+                        <SearchBar width="300px" height="40px" backgroundColor="#220d33" textColor="#9e9a9a" placeholder="Wyszukaj" icon="/assets/images/navbar/search-icon.png"/>
                     </div>
                     <div className="navbar-center-right">
                         <NormalButton text="Zaloguj się"/>

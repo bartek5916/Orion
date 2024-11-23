@@ -5,7 +5,6 @@ html, body {
 
 .navbar {
     background-color: #19002A;
-    position: fixed;
     width: 100%;
     z-index: 1000;
 }
@@ -33,25 +32,7 @@ html, body {
 }
 
 .navbar-center-left {
-    display: flex;
     margin-right: 25%;
-}
-
-::placeholder {
-    color: #9e9a9a;
-    opacity: 1;
-}
-
-.search-input {
-    color: #9e9a9a;
-    background-color: #220d33;
-    border: none;
-    border-radius: 50px;
-    width: 300px;
-    height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-indent: 10px;
 }
 
 .navbar-center-right {
@@ -79,7 +60,7 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-    .search-input {
+    .navbar-center-left {
         display: none;
     }
 }

@@ -1,0 +1,25 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.search{
+    width: 30%;
+    outline: none;
+    border: none;
+    scale: 0.95;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+::placeholder {
+    opacity: 1;
+}
+
+.custom-rounded-button {
+    scale: 0.7;
+    pointer-events: none;
+    margin-left: -5px;
+}
