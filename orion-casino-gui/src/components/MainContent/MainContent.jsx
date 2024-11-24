@@ -3,8 +3,9 @@ import './MainContent.css'
 
 function MainContent() {
     return (
-        <div className="main-container">
-            siemanko
+        <div className="main-content-panel">
+            <div className="main-content-container">
+            </div>
         </div>
     );
 }

@@ -1,5 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
     background-color: #19002A;
+    position: relative;
+    min-height: 100vh;
 }

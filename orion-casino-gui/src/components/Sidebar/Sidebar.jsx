@@ -5,7 +5,6 @@ import ButtonGradient from "../Buttons/ButtonGradient";
 
 function Sidebar() {
     return (
-        <>
             <nav className="sidebar">
                 <div className="sidebar-container">
 
@@ -49,7 +48,6 @@ function Sidebar() {
                     </div>
                 </div>
             </nav>
-        </>
     );
 }
 

@@ -31,10 +31,11 @@
 }
 
 .navbar-center-right {
+    position: relative;
+    right: 11px;
     display: inline-flex;
     justify-content: space-between;
     gap: 15px;
-    margin-left: 0;
     flex-wrap: wrap;
 }
 
