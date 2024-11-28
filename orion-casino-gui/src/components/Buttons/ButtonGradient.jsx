@@ -1,11 +1,12 @@
 import React from 'react';
 import './ButtonGradient.css';
 
-function ButtonGradient({width, height, color, text}) {
+function ButtonGradient({width, height, color, text, textColor}) {
     const buttonStyle = {
         width: width,
         height: height,
         background: color,
+        color: textColor,
     }
 
     return (

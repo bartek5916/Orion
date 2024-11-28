@@ -13,3 +13,29 @@
     width: 100%;
     height: 100%;
 }
+
+.free-bonus-panel{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    top: 10px;
+    justify-content: center;
+}
+
+.free-bonus-picture{
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.free-spin-main-panel-button{
+    width: 300px;
+    height: 80px;
+    z-index: 1;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}

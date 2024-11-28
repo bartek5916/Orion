@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/about-us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/deposit-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/faq-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/favourite-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/free-spin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/new-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/popular-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/public/assets/images/sidebar/ranking-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/ButtonGradient.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Buttons/ButtonGradient.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/MainContent/MainContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/MainContent/MainContent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/MainContent/MainContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/MainContent/MainContent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/pages/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/pages/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/pages/HomePage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,9 @@
       <workItem from="1732290924465" duration="15603000" />
       <workItem from="1732355872519" duration="24574000" />
       <workItem from="1732446807167" duration="243000" />
-      <workItem from="1732470382443" duration="1893000" />
+      <workItem from="1732470382443" duration="3306000" />
+      <workItem from="1732734509876" duration="791000" />
+      <workItem from="1732782600206" duration="4426000" />
     </task>
     <servers />
   </component>
