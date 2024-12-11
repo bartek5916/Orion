@@ -1,10 +1,10 @@
 import React from 'react';
 import './NormalButton.css';
 
-function ButtonGradient(props) {
+function NormalButton({ text, onClick }) {
     return (
-        <div className="normal-button">{props.text}</div>
+        <div className="normal-button" onClick={onClick}>{text}</div>
     );
 }
 
-export default ButtonGradient;
+export default NormalButton;

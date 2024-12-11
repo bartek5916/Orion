@@ -1,13 +1,10 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 .home-page {
     display: flex;
     flex-direction: column;
-    background-color: #19002A;
-    position: relative;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100vw;
     min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #19002A;
 }

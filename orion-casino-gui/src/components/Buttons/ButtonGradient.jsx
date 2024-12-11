@@ -1,7 +1,7 @@
 import React from 'react';
 import './ButtonGradient.css';
 
-function ButtonGradient({width, height, color, text, textColor}) {
+function ButtonGradient({width, height, color, text, textColor, onClick}) {
     const buttonStyle = {
         width: width,
         height: height,
@@ -10,7 +10,7 @@ function ButtonGradient({width, height, color, text, textColor}) {
     }
 
     return (
-        <div className="button-gradient" style={buttonStyle}>{text}</div>
+        <div className="button-gradient" style={buttonStyle} onClick={onClick}>{text}</div>
     );
 }
 

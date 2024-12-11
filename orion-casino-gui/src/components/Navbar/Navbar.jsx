@@ -1,11 +1,22 @@
-import React from 'react';
 import './Navbar.css';
+import React, { useState } from "react";
 import ButtonGradient from "../Buttons/ButtonGradient";
 import NormalButton from "../Buttons/NormalButton";
 import RoundedButton from "../Buttons/RoundedButton";
 import SearchBar from "../SearchBar/SearchBar";
+import LoginPanel from "../Login/LoginPanel";
 
 function Navbar() {
+    const [isLoginVisible, setLoginVisible] = useState(false);
+
+    const handleLoginClick = () => {
+        setLoginVisible(true);
+    };
+
+    const handleClose = () => {
+        setLoginVisible(false);
+    };
+
     return (
         <>
             <nav className="navbar">
@@ -23,7 +34,7 @@ function Navbar() {
                         <SearchBar width="300px" height="40px" backgroundColor="#220d33" textColor="#9e9a9a" placeholder="Wyszukaj" icon="/assets/images/navbar/search-icon.png"/>
                     </div>
                     <div className="navbar-center-right">
-                        <NormalButton text="Zaloguj się"/>
+                        <NormalButton text="Zaloguj się" onClick={handleLoginClick}/>
                         <ButtonGradient width="134px" height="42px" color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="Rejestracja"/>
                     </div>
                     <div className="navbar-right-corner">
@@ -31,6 +42,7 @@ function Navbar() {
                         <RoundedButton src="/assets/images/navbar/settings-icon2.png"/>
                     </div>
                 </div>
+                {isLoginVisible && <LoginPanel onClose={handleClose} />}
             </nav>
         </>
     );
