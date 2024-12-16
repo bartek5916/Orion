@@ -5,17 +5,24 @@ import NormalButton from "../Buttons/NormalButton";
 import RoundedButton from "../Buttons/RoundedButton";
 import SearchBar from "../SearchBar/SearchBar";
 import LoginPanel from "../Login/LoginPanel";
+import SignUpPanel from "../SignUp/SignUpPanel";
 
 function Navbar() {
     const [isLoginVisible, setLoginVisible] = useState(false);
-    const [isSignUp, setSignUp] = useState(false);
+    const [isSignUpVisible, setSignUpVisible] = useState(false);
 
     const handleLoginClick = () => {
         setLoginVisible(true);
     };
-
-    const handleClose = () => {
+    const handleLoginCLose = () => {
         setLoginVisible(false);
+    };
+
+    const handleSignUpClick = () => {
+        setSignUpVisible(true);
+    };
+    const handleSignUpClose = () => {
+        setSignUpVisible(false);
     };
 
     return (
@@ -36,14 +43,15 @@ function Navbar() {
                     </div>
                     <div className="navbar-center-right">
                         <NormalButton text="Zaloguj się" onClick={handleLoginClick}/>
-                        <ButtonGradient width="134px" height="42px" color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="Rejestracja"/>
+                        <ButtonGradient width="134px" height="42px" color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="Rejestracja" onClick={handleSignUpClick}/>
                     </div>
                     <div className="navbar-right-corner">
                         <RoundedButton src="/assets/images/navbar/profile-picture.png"/>
                         <RoundedButton src="/assets/images/navbar/settings-icon2.png"/>
                     </div>
                 </div>
-                {isLoginVisible && <LoginPanel onClose={handleClose} />}
+                {isLoginVisible && <LoginPanel onClose={handleLoginCLose} />}
+                {isSignUpVisible && <SignUpPanel onClose={handleSignUpClose} />}
             </nav>
         </>
     );

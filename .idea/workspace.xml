@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Login/LoginPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Login/LoginPanel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Login/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Login/LoginPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navbar/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1733257157965" duration="4717000" />
       <workItem from="1733913045456" duration="3246000" />
       <workItem from="1733931924094" duration="12287000" />
-      <workItem from="1734339156816" duration="9005000" />
+      <workItem from="1734339156816" duration="10923000" />
     </task>
     <servers />
   </component>

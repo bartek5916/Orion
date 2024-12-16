@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    display: flex;
+    z-index: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.signup-popup {
+    display: flex;
+    width: 800px;
+    height: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 15px;
+}
+
+.signup-popup-left {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #262544;
+    border-radius: 15px 0 0 15px;
+    Font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.signup-popup-right {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181637;
+    border-radius: 0 15px 15px 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.signup-popup h1 {
+    top: 10%;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.signup-popup p {
+    top: 10%;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+.signup-title {
+    top: 3%;
+    right: 10%;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.signup-form {
+    top: 4%;
+    position: relative;
+    right: 3%;
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0b0d2c;
+    color: white;
+    outline: none;
+}
+
+
+.form-group input::placeholder {
+    color: rgb(158, 154, 154)
+}
+
+
+.signup-options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+    width: 200px;
+}
+
+.signup-options label{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.signup-options input[type="checkbox"] {
+    display: none;
+}
+
+.signup-options label::before {
+    position: relative;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 2px solid #BCED4EFF;
+    border-radius: 3px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.signup-options input[type="checkbox"]:checked + label::before {
+    position: relative;
+    content: "✓";
+    color: #181637;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #BCED4EFF;
+    border-color: #BCED4EFF;
+    cursor: pointer;
+}
+
+.signup-forgot-password {
+    color: white;
+    text-decoration: none;
+}
+
+.signup-forgot-password:hover {
+    color: #373661;
+}
+
+.btn-signup {
+    position: relative;
+    width: 108%;
+    background: linear-gradient(90deg, #bced4e, #81b040);
+    color: #181637;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 10%;
+    font-weight: bold;
+}
+
+.signup-link {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    bottom: 4%;
+}
+
+.signup-link a {
+    color: #BCED4EFF;
+    text-decoration: none;
+}
+
+.login-link {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    bottom: 4%;
+}
+
+.login-link a {
+    color: #BCED4EFF;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #BCED4EFF;
+}
