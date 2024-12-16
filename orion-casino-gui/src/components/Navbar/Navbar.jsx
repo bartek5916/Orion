@@ -8,6 +8,7 @@ import LoginPanel from "../Login/LoginPanel";
 
 function Navbar() {
     const [isLoginVisible, setLoginVisible] = useState(false);
+    const [isSignUp, setSignUp] = useState(false);
 
     const handleLoginClick = () => {
         setLoginVisible(true);

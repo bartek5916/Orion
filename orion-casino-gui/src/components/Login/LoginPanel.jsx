@@ -5,35 +5,31 @@ function LoginPanel({onClose}) {
     return (
         <div className="overlay">
             <div className="login-popup">
+                <button className="close-button" onClick={onClose}>&times;</button>
                 <div className="login-popup-left">
                     <h1>Witamy w Kasynie Orion</h1>
                     <p>Zacznij swoją przygodę z grami już teraz!</p>
                 </div>
                 <div className="login-popup-right">
-                   {/* <form>
+                    <h2 className="login-title">Zaloguj się</h2>
+                    <form className="login-form">
                         <div className="form-group">
-                            <label htmlFor="email">Adres e-mail</label>
-                            <input
-                                type="text"
-                                id="email"
-                                placeholder="Wprowadź adres e-mail"
-                            />
+                            <label htmlFor="email">E-mail</label>
+                            <input type="text" id="email" placeholder="twojmail@gmail.com"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Hasło</label>
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Wprowadź swoje hasło"
-                            />
+                            <input type="password" id="password" placeholder="Wpisz swoje hasło"/>
                         </div>
-                        <div className="form-options">
-                            <a href="#">Zapomniałeś hasła?</a>
+                        <div className="login-options">
+                            <input type="checkbox" id="remember-me"/>
+                            <label htmlFor="remember-me">Zapamiętaj mnie</label>
+                            <a href="#" className="forgot-password" id="forgot-passoword">Nie pamiętasz hasła?</a>
                         </div>
-                        <button type="submit" className="btn-login">Zaloguj się</button>
-                    </form>*/}
-                    <div className="register-link">
-                        {/*Nie masz konta? <a href="#">Zarejestruj się</a>*/}
+                        <button type="submit" className="btn-login">Zaloguj</button>
+                    </form>
+                    <div className="signup-link">
+                        Nie masz jeszcze konta? <a href="#" className="signup">Dołącz już teraz!</a>
                     </div>
                 </div>
             </div>
