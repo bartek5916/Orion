@@ -1,12 +1,23 @@
 import React from 'react';
-import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from "./pages/HomePage/HomePage";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        <HomePage />
-    </div>
+      <Router>
+          <div className="App">
+              <Navbar/>
+              <Sidebar/>
+              <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+              </Routes>
+          </div>
+      </Router>
   );
 }
 

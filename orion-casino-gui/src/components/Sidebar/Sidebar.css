@@ -1,14 +1,14 @@
 .sidebar {
-    position: relative;
+    position: absolute;
     width: 16%;
     max-width: 18%;
     height: 90vh;
     left: 1%;
+    top: 8%;
 }
 
 .sidebar-container{
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
