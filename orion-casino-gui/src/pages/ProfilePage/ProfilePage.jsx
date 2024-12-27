@@ -1,17 +1,34 @@
 import React, {useState} from "react";
 import "./ProfilePage.css";
 import ButtonGradient from "../../components/Buttons/ButtonGradient";
+import AchievementCard from "../../components/AchievementCard/AchievementCard";
 
 function ProfilePage() {
-    // 1. Stan aktywnej sekcji
     const [activeSection, setActiveSection] = useState("personalData");
+
+    const cards_top = [
+        {
+            status: 'Bronze',
+            money: '$100',
+            features: ['3% bonusu do depozytu', '1 FREESPIN dziennie', 'Turnieje ze stawką do 1000$']
+        },
+        {
+            status: 'Silver',
+            money: '$500 - $1000',
+            features: ['5% bonusu do depozytu', '3 FREESPIN dziennie', 'Turnieje ze stawką do 5000$', 'Szybsza obsługa klienta']
+        },
+        {
+            status: 'Gold',
+            money: '$1000 - $5000',
+            features: ['10% bonusu do depozytu', '5 FREESPIN dziennie', 'Turnieje ze stawką do 10000$', 'Dedykowany asystent klienta', 'Specjalne promocje']
+        }
+    ];
 
     return (
         <div className="profile-content">
             <h1 className="profile-title">MÓJ PROFIL</h1>
             <div className="profile-content-left">
                 <div className="profile-left-container">
-                    {/* Przyciski do zmiany sekcji */}
                     <div
                         className={`personal-data ${activeSection === "personalData" ? "active" : ""}`}
                         onClick={() => setActiveSection("personalData")}
@@ -22,12 +39,11 @@ function ProfilePage() {
                         className={`achievements ${activeSection === "achievements" ? "active" : ""}`}
                         onClick={() => setActiveSection("achievements")}
                     >
-                        Osiągnięcia
+                        Status
                     </div>
                 </div>
             </div>
 
-            {/* Renderowanie sekcji dynamicznie */}
             <div className="profile-content-right">
                 {activeSection === "personalData" && (
                     <div className="profile-personal-data">
@@ -104,28 +120,16 @@ function ProfilePage() {
 
                 {activeSection === "achievements" && (
                     <div className="profile-achievements">
-                        <div className="achievement-card bronze">
-                            <div className="achievement-status">Bronze</div>
-                            <div className="achievement-money">$10k</div>
-                            <ul>
-                            <li>Monthly Bonuses</li>
-                                <li>Level Up Bonuses</li>
-                                <li>Rakeback</li>
-                                <li>Weekly Bonuses</li>
-                            </ul>
+                        <div className="card-container-top">
+                            {cards_top.map((card, index) => (
+                                <AchievementCard
+                                    key={index}
+                                    status={card.status}
+                                    money={card.money}
+                                    features={card.features}
+                                />
+                            ))}
                         </div>
-                        <div className="achievement-card silver">
-                            <h2>Silver</h2>
-                            <p>$50k - $100k</p>
-                            <ul>
-                                <li>Monthly Bonuses</li>
-                                <li>Level Up Bonuses</li>
-                                <li>Rakeback</li>
-                                <li>Weekly Bonuses</li>
-                                <li>Bonus Growth</li>
-                            </ul>
-                        </div>
-                        {/* Możesz dodać więcej kart w podobny sposób */}
                     </div>
                 )}
             </div>

@@ -410,7 +410,10 @@
 
 .profile-achievements {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-container-top{
+    display: flex;
+    gap: 10px;
 }

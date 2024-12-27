@@ -1,0 +1,58 @@
+.achievement-card {
+    background-color: #220d33;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-status {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #220d33;
+}
+
+.achievement-card.bronze .achievement-status {
+    background-color: #A68A54;
+}
+
+.achievement-card.silver .achievement-status {
+    background-color: #BCC4D0;
+}
+
+.achievement-card.gold .achievement-status {
+    background-color: #fcdb0a;
+}
+
+.achievement-money {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.achievement-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-item::before {
+    content: '\2713';
+    color: #6CF3A9;
+    margin-right: 10px;
+    font-size: 16px;
+}
