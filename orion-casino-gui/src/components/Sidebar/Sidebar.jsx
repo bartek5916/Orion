@@ -1,13 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Sidebar.css';
 import SidebarButton from "../Buttons/SidebarButton";
 import ButtonGradient from "../Buttons/ButtonGradient";
+import LoginPanel from "../Login/LoginPanel";
+import DepositPanel from "../DepositPanel/DepositPanel";
 
 function Sidebar() {
+    const [isDepositVisible, setDepositVisible] = useState(false);
+
+    const handleDepositClick = () => {
+        setDepositVisible(true);
+        document.body.style.overflow = 'hidden';
+    };
+    const handleDepositClose = () => {
+        setDepositVisible(false);
+        document.body.style.overflow = 'auto';
+    };
+
     return (
             <nav className="sidebar">
                 <div className="sidebar-container">
-
                     <div className="free-spin-button">
                         <img className="free-spin-icon" src="/assets/images/sidebar/free-spin.png"
                              alt="freespin-icon"></img>
@@ -43,10 +55,11 @@ function Sidebar() {
                         </div>
                         <div className="deposit-button">
                             <ButtonGradient width="300px" height="80px"
-                                            color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="DEPOZYT"/>
+                                            color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)" text="DEPOZYT" onClick={handleDepositClick}/>
                         </div>
                     </div>
                 </div>
+                {isDepositVisible && <DepositPanel onClose={handleDepositClose}/>}
             </nav>
     );
 }

@@ -1,0 +1,305 @@
+.deposit-popup {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.deposit-left {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #262544;
+    border-radius: 15px 0 0 15px;
+}
+
+.deposit-right {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #181637;
+    border-radius: 0 15px 15px 0;
+}
+
+/*Step 1*/
+
+.deposit-top {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.deposit-text {
+    font-weight: normal;
+    font-size: 18px;
+    color: #bced4e;
+}
+
+.fill-wallet-text {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.deposit-step-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    height: 450px;
+}
+
+.deposit-payment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    top: 6%;
+}
+
+.payment-methods-top {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.payment-methods-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+
+.payment-method-button {
+    background-color: #181637;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 100px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: transform 0.2s ease;
+}
+
+.payment-method-button:hover {
+}
+
+/*Step 2*/
+
+.deposit-step-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    width: 552px;
+    height: 400px;
+}
+
+.payment-method-top-2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.btn-go-back {
+    display: flex;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.btn-go-back-sign {
+    position: relative;
+    color: #bced4e;
+    left: 0;
+    transition: left 0.4s ease;
+    font-size: 30px;
+    bottom: 1px;
+}
+
+.btn-go-back:hover .btn-go-back-sign {
+    left: -5px;
+}
+
+.btn-go-back-text {
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    align-items: center;
+}
+
+.payment-method-2 {
+    font-size: 15px;
+    color: #bced4e;
+}
+
+.payment-amount-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.payment-amount-cards-top {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.payment-amount-cards-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.payment-amount-button {
+    background-color: #181637;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 60px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: transform 0.2s ease;
+}
+
+.payment-method-step-2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.amount-selection {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 552px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    height: 35px;
+}
+
+.dollar-sign {
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    height: 100%;
+    border: 1px solid #0b0d2c;
+    background-color: #0b0d2c;
+    border-radius: 5px 0 0 5px;
+    align-items: center;
+    color: #bced4e;
+}
+
+.amount-selection label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.amount-selection input {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #0b0d2c;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.amount-selection input::placeholder {
+    color: rgb(158, 154, 154);
+}
+
+.btn-deposit {
+    background: linear-gradient(90deg, #bced4e, #81b040);
+    color: #181637;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.close-button-deposit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s ease;
+}
+
+.close-button-deposit:hover {
+    color: #BCED4EFF;
+}
+
+
+
+/*Stopka*/
+
+.footer-payment-safety {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    font-weight: normal;
+    font-size: 12px;
+    color: #0b0d2c;
+}
+
+.footer-payment-orion {
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    font-weight: normal;
+    font-size: 12px;
+    color: #0b0d2c;
+}
+
+.footer-payment-history {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.footer-payment-history:hover {
+    color: #bced4e;
+}
+
+/*Prawa strona*/
+.deposit-right h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 5%;
+    color: #bced4e;
+}
+
+.deposit-right ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    gap: 5px;
+}
