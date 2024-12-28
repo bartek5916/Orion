@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './Sidebar.css';
 import SidebarButton from "../Buttons/SidebarButton";
 import ButtonGradient from "../Buttons/ButtonGradient";
-import LoginPanel from "../Login/LoginPanel";
 import DepositPanel from "../DepositPanel/DepositPanel";
 
 function Sidebar() {

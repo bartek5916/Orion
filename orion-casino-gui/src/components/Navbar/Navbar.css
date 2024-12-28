@@ -20,6 +20,8 @@
     align-items: center;
     text-align: center;
     left: 10px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
 }
 
 .navbar-left-corner:hover {

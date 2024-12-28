@@ -39,6 +39,9 @@
     width: 300px;
     height: 80px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .free-spin-button:hover{
     scale: 1.05;

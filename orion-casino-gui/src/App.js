@@ -5,20 +5,25 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import './App.css';
+import PersonalData from "./components/ProfilePage/PersonalData/PersonalData";
+import Achievements from "./components/ProfilePage/Achievements/Achievements";
 
 function App() {
-  return (
-      <Router>
-          <div className="App">
-              <Navbar/>
-              <Sidebar/>
-              <Routes>
-                  <Route path="/" element={<HomePage />} />
-                  <Route path="/profile" element={<ProfilePage />} />
-              </Routes>
-          </div>
-      </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Navbar />
+                <Sidebar />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/profile/*" element={<ProfilePage />}>
+                        <Route path="settings" element={<PersonalData />} />
+                        <Route path="achievements" element={<Achievements />} />
+                    </Route>
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
