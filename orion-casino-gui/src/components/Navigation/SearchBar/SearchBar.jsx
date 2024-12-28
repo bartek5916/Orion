@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './SearchBar.css';
-import RoundedButton from "../Buttons/RoundedButton";
+import RoundedButton from "../../Buttons/RoundedButton";
 import './SearchBar.css'
 
 function SearchBar({width, height, backgroundColor, textColor, placeholder, icon}) {

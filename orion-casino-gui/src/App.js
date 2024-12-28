@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from "./pages/HomePage/HomePage";
-import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Navbar from "./components/Navigation/Navbar/Navbar";
+import Sidebar from "./components/Navigation/Sidebar/Sidebar";
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import './App.css';
 import PersonalData from "./components/ProfilePage/PersonalData/PersonalData";

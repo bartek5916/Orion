@@ -1,11 +1,11 @@
 import './Navbar.css';
 import React, {useState} from "react";
-import ButtonGradient from "../Buttons/ButtonGradient";
-import NormalButton from "../Buttons/NormalButton";
-import RoundedButton from "../Buttons/RoundedButton";
+import ButtonGradient from "../../Buttons/ButtonGradient";
+import NormalButton from "../../Buttons/NormalButton";
+import RoundedButton from "../../Buttons/RoundedButton";
 import SearchBar from "../SearchBar/SearchBar";
-import LoginPanel from "../Login/LoginPanel";
-import SignUpPanel from "../SignUp/SignUpPanel";
+import LoginPanel from "../../Authorization/Login/LoginPanel";
+import SignUpPanel from "../../Authorization/SignUp/SignUpPanel";
 import {Link} from "react-router-dom";
 
 function Navbar() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import AchievementCard from "../../AchievementCard/AchievementCard";
+import AchievementCard from "../AchievementCard/AchievementCard";
 import './Achievements.css';
 
 function Achievements(props) {

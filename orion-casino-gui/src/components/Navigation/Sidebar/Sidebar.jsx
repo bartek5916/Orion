@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './Sidebar.css';
-import SidebarButton from "../Buttons/SidebarButton";
-import ButtonGradient from "../Buttons/ButtonGradient";
-import DepositPanel from "../DepositPanel/DepositPanel";
+import SidebarButton from "../../Buttons/SidebarButton";
+import ButtonGradient from "../../Buttons/ButtonGradient";
+import DepositPanel from "../../Popups/DepositPanel/DepositPanel";
 
 function Sidebar() {
     const [isDepositVisible, setDepositVisible] = useState(false);
