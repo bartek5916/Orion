@@ -24,6 +24,24 @@ function ProfilePage() {
         }
     ];
 
+    const cards_bottom = [
+        {
+            status: 'Platinum',
+            money: '$5k-$10k',
+            features: ['13% bonusu do depozytu', '10 FREESPIN dziennie', 'Turnieje ze stawką do 20k$', 'Dedykowany asystent klienta', 'Specjalne promocje', 'Wydarzenia VIP']
+        },
+        {
+            status: 'Emerald',
+            money: '$10k-$50k',
+            features: ['15% bonusu do depozytu', '12 FREESPIN dziennie', 'Turnieje ze stawką do 100k$', 'Osobisty asystent klienta', 'Specjalne promocje', 'Wydarzenia VIP']
+        },
+        {
+            status: 'Diamond',
+            money: '$50k+',
+            features: ['20% bonusu do depozytu', '15 FREESPIN dziennie', 'Turnieje ze stawką bez limitu', 'Osobisty asystent klienta 24/7', 'Wydarzenia VIP', 'Unikalne, prywatne gry']
+        }
+    ];
+
     return (
         <div className="profile-content">
             <h1 className="profile-title">MÓJ PROFIL</h1>
@@ -84,7 +102,7 @@ function ProfilePage() {
                                 <div className="profile-notifications">
                                     <div className="notifications-text">
                                         <h3>Powiadomienia email</h3>
-                                        <p>Włącz powiadomienia, aby otrzymywać więcej bonusów</p>
+                                        <p>Włącz powiadomienia, aby otrzymywać specjalne oferty</p>
                                     </div>
                                     <div className="toggler">
                                         <input id="toggler-1" name="toggler-1" type="checkbox" value="1"/>
@@ -122,6 +140,16 @@ function ProfilePage() {
                     <div className="profile-achievements">
                         <div className="card-container-top">
                             {cards_top.map((card, index) => (
+                                <AchievementCard
+                                    key={index}
+                                    status={card.status}
+                                    money={card.money}
+                                    features={card.features}
+                                />
+                            ))}
+                        </div>
+                        <div className="card-container-bottom">
+                            {cards_bottom.map((card, index) => (
                                 <AchievementCard
                                     key={index}
                                     status={card.status}

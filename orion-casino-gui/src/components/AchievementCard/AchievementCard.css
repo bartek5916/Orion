@@ -31,6 +31,20 @@
     background-color: #fcdb0a;
 }
 
+.achievement-card.platinum .achievement-status {
+    background-color: #6ddbe6;
+}
+
+.achievement-card.emerald .achievement-status {
+    background-color: #50C878;
+}
+
+
+.achievement-card.diamond .achievement-status {
+    background-color: #B9F2FF;
+}
+
+
 .achievement-money {
     font-size: 24px;
     font-weight: bold;

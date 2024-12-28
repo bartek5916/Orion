@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/AchievementCard/AchievementCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/AchievementCard/AchievementCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/pages/ProfilePage/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/pages/ProfilePage/ProfilePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/pages/ProfilePage/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/pages/ProfilePage/ProfilePage.jsx" afterDir="false" />
     </list>
@@ -101,7 +102,8 @@
       <workItem from="1734356422848" duration="4957000" />
       <workItem from="1734375998467" duration="1760000" />
       <workItem from="1734952277552" duration="486000" />
-      <workItem from="1735299271498" duration="16280000" />
+      <workItem from="1735299271498" duration="16539000" />
+      <workItem from="1735381333565" duration="1455000" />
     </task>
     <servers />
   </component>
