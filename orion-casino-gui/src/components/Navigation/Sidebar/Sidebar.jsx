@@ -37,7 +37,7 @@ function Sidebar() {
                         <div className="facourite-games">
                             <SidebarButton text="Ulubione gry" icon="/assets/images/sidebar/favourite-icon.png"/>
                         </div>
-                        <div className="deposit">
+                        <div className="deposit" onClick={handleDepositClick}>
                             <SidebarButton text="Depozyt" icon="/assets/images/sidebar/deposit-icon.png"/>
                         </div>
                         <div className="leaderboard">

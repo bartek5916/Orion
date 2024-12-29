@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import './DepositPanel.css';
+import {Link} from "react-router-dom";
 
 function DepositPanel({onClose}) {
     const [step, setStep] = useState(1);
     const [selectedMethod, setSelectedMethod] = useState("");
     const [amount, setAmount] = useState("");
-    const [depositAmount, setDepositAmount] = useState("");
 
     const paymentMethodsTop = [
         "Karta płatnicza",
@@ -44,7 +44,8 @@ function DepositPanel({onClose}) {
         alert("Doładowano konto!");
     };
 
-    const handleDepositAmount = (method) => {
+    const handleDepositAmount = (selectedAmount) => {
+        setAmount(selectedAmount.replace("$", ""));
     };
 
     const handleAnotherMethodSelect = () => {
@@ -99,7 +100,7 @@ function DepositPanel({onClose}) {
                                 <div className="payment-method-step-2">2. Wybierz kwotę</div>
                             </div>
                             <div className="payment-amount-cards">
-                            <div className="payment-amount-cards-top">
+                                <div className="payment-amount-cards-top">
                                     {paymentAmountTop.map((method) => (
                                         <button
                                             key={method}
@@ -139,7 +140,7 @@ function DepositPanel({onClose}) {
                             </button>
                         </div>
                     )}
-                    <div className="footer-payment-history">Historia wpłat</div>
+                    <Link to="/profile/payments" className="footer-payment-history" onClick={onClose}>Historia wpłat</Link>
                     <div className="footer-payment-safety">Wszystkie transakcje są bezpieczne i szyfrowane. Twoje dane
                         są chronione.
                     </div>

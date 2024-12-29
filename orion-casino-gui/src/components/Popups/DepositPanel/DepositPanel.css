@@ -276,11 +276,13 @@
     color: #0b0d2c;
 }
 
-.footer-payment-history {
+.footer-payment-history{
     display: flex;
     position: absolute;
     bottom: 10%;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .footer-payment-history:hover {

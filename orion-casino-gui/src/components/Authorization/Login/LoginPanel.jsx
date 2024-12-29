@@ -1,7 +1,13 @@
 import React from "react";
 import './LoginPanel.css';
 
-function LoginPanel({onClose}) {
+function LoginPanel({onClose, handleSignUpClick, handleSignInClose}) {
+
+    const handleSignUp = () => {
+        handleSignUpClick(true);
+        handleSignInClose(true);
+    };
+
     return (
         <div className="overlay">
             <div className="login-popup">
@@ -29,7 +35,8 @@ function LoginPanel({onClose}) {
                         <button type="submit" className="btn-login">Zaloguj</button>
                     </form>
                     <div className="signup-link">
-                        Nie masz jeszcze konta? <a href="#" className="signup">Dołącz już teraz!</a>
+                        Nie masz jeszcze konta?
+                        <a href="#" className="signup" onClick={handleSignUp}>Dołącz już teraz!</a>
                     </div>
                 </div>
             </div>

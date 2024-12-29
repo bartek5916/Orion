@@ -72,8 +72,8 @@ function Navbar() {
                         <RoundedButton src="/assets/images/navbar/settings-icon2.png"/>
                     </div>
                 </div>
-                {isLoginVisible && <LoginPanel onClose={handleLoginCLose}/>}
-                {isSignUpVisible && <SignUpPanel onClose={handleSignUpClose}/>}
+                {isLoginVisible && <LoginPanel onClose={handleLoginCLose} handleSignUpClick={handleSignUpClick} handleSignInClose={handleLoginCLose}/>}
+                {isSignUpVisible && <SignUpPanel onClose={handleSignUpClose} handleLoginClick={handleLoginClick} handleSignUpClose={handleSignUpClose}/>}
             </nav>
         </>
     );

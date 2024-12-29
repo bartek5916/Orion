@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="" />
+    <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,11 +65,11 @@
       <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images\sidebar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\components\Popups" />
+      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\components\ProfilePage" />
+      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\components\Navigation" />
+      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\components\Authorization" />
       <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\pages\HomePage" />
-      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\src\components\Login" />
-      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images\navbar" />
-      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets\images" />
-      <recent name="F:\Pobrane\Foldery pulpitowe\studia\TIN\Orion\orion-casino-gui\public\assets" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -98,7 +106,9 @@
       <workItem from="1734375998467" duration="1760000" />
       <workItem from="1734952277552" duration="486000" />
       <workItem from="1735299271498" duration="16539000" />
-      <workItem from="1735381333565" duration="20948000" />
+      <workItem from="1735381333565" duration="21504000" />
+      <workItem from="1735420914106" duration="1085000" />
+      <workItem from="1735425031504" duration="3986000" />
     </task>
     <servers />
   </component>
