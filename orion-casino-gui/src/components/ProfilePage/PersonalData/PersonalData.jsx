@@ -1,8 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ButtonGradient from "../../Buttons/ButtonGradient";
 import './PersonalData.css';
 
 function PersonalData(props) {
+    const [profileImage, setProfileImage] = useState(null);
+
+    const handleImageUpload = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                setProfileImage(e.target.result);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     return (
         <div className="profile-personal-data">
             <div className="profile-nickname">
@@ -67,9 +80,28 @@ function PersonalData(props) {
                     <div className="profile-photo">
                         <h3>Wgraj zdjęcie profilowe</h3>
                         <div className="upload-photo">
-                            <label htmlFor="upload-photo">Kliknij, aby wgrać zdjęcie</label>
-                            <input type="file" id="upload-photo"/>
+                            <label htmlFor="upload-photo">
+                                {profileImage ? (
+                                    <img src={profileImage} alt="Profile picture" className="uploaded-image"/>
+                                ) : (
+                                    "Kliknij, aby wgrać zdjęcie"
+                                )}
+                            </label>
+                            <input
+                                type="file"
+                                id="upload-photo"
+                                accept="image/*"
+                                onChange={handleImageUpload}
+                            />
                         </div>
+                    </div>
+                    <div className="save-image">
+                        <ButtonGradient
+                            width="150px"
+                            height="40px"
+                            color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)"
+                            text="Zapisz zdjęcie"
+                        />
                     </div>
                 </div>
             </div>

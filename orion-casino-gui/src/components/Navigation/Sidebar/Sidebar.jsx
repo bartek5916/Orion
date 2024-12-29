@@ -40,6 +40,9 @@ function Sidebar() {
                         <div className="deposit" onClick={handleDepositClick}>
                             <SidebarButton text="Depozyt" icon="/assets/images/sidebar/deposit-icon.png"/>
                         </div>
+                        <div className="deposit">
+                            <SidebarButton text="Wypłata" icon="/assets/images/sidebar/deposit-icon.png"/>
+                        </div>
                         <div className="leaderboard">
                             <SidebarButton text="Ranking" icon="/assets/images/sidebar/ranking-icon.png"/>
                         </div>

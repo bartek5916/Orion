@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/ProfilePage/PersonalData/PersonalData.css" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/ProfilePage/PersonalData/PersonalData.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/ProfilePage/PersonalData/PersonalData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/ProfilePage/PersonalData/PersonalData.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1735299271498" duration="16539000" />
       <workItem from="1735381333565" duration="21504000" />
       <workItem from="1735420914106" duration="1085000" />
-      <workItem from="1735425031504" duration="3986000" />
+      <workItem from="1735425031504" duration="5010000" />
     </task>
     <servers />
   </component>

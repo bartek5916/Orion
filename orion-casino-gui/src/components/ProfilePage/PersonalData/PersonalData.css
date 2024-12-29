@@ -1,16 +1,16 @@
-.profile-personal-data{
+.profile-personal-data {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-/*!*Sekcja Nickname*!*/
+/*!* Sekcja Nickname *!*/
 
- .profile-nickname {
-     display: flex;
-     align-items: baseline;
-     justify-content: space-between;
- }
+.profile-nickname {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .profile-nickname label {
     font-family: "Roboto", sans-serif;
@@ -32,11 +32,12 @@
 }
 
 /*!* Sekcja Email *!*/
- .profile-email {
-     display: flex;
-     align-items: baseline;
-     justify-content: space-between;
- }
+
+.profile-email {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .profile-email label {
     font-family: "Roboto", sans-serif;
@@ -58,11 +59,12 @@
 }
 
 /*!* Sekcja Telefon *!*/
- .profile-phone {
-     display: flex;
-     align-items: baseline;
-     justify-content: space-between;
- }
+
+.profile-phone {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .profile-phone label {
     font-family: "Roboto", sans-serif;
@@ -101,14 +103,14 @@
     outline: none;
 }
 
-/*!*Dolna sekcja*!*/
+/*!* Dolna sekcja *!*/
 
- .profile-bottom-section {
-     display: flex;
-     justify-content: space-between;
-     margin-top: 30px;
-     gap: 20px;
- }
+.profile-bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
 
 .profile-bottom-left {
     display: flex;
@@ -146,20 +148,20 @@
     outline: none;
 }
 
-
 /*!* Prawa strona: upload zdjęcia *!*/
- .profile-bottom-right {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     width: 35%;
-     border: 2px solid #262544;
-     background-color: #19002A;
-     padding: 20px;
-     border-radius: 10px;
-     text-align: center;
- }
+
+.profile-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    border: 2px solid #262544;
+    background-color: #19002A;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
 .profile-photo h3 {
     font-family: "Roboto", sans-serif;
@@ -182,6 +184,7 @@
     cursor: pointer;
     position: relative;
     transition: border-color 0.3s;
+    overflow: hidden;
 }
 
 .upload-photo:hover {
@@ -190,6 +193,11 @@
 
 .upload-photo label {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #747474;
@@ -200,16 +208,30 @@
     display: none;
 }
 
+.uploaded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.save-image {
+    display: flex;
+    position: relative;
+    top: 5%;
+}
+
 /*!* Powiadomienia email *!*/
- .profile-notifications {
-     position: relative;
-     display: flex;
-     margin-top: 20px;
-     padding: 15px 10px;
-     border: 2px solid #262544;
-     background-color: #19002A;
-     border-radius: 10px;
- }
+
+.profile-notifications {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    padding: 15px 10px;
+    border: 2px solid #262544;
+    background-color: #19002A;
+    border-radius: 10px;
+}
 
 .notifications-text {
     display: flex;
@@ -231,21 +253,15 @@
     margin-bottom: 15px;
 }
 
-.email-notifications {
+/*!* Przycisk *!*/
+
+.toggler {
+    position: relative;
     display: flex;
+    width: 72px;
     align-items: center;
-    gap: 10px;
+    left: 28px;
 }
-
-/*!*Przycisk*!*/
-
- .toggler {
-     position: relative;
-     display: flex;
-     width: 72px;
-     align-items: center;
-     left: 28px;
- }
 
 .toggler input {
     display: none;
@@ -281,10 +297,6 @@
     height: 26px;
     transform: translateY(-50%) translateX(-50%);
     transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
-}
-
-.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off {
-    left: 75%;
 }
 
 .toggler input:checked + label::after {
