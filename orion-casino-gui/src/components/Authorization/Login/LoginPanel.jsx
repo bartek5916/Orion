@@ -48,14 +48,6 @@ function LoginPanel({onClose, handleSignUpClick, handleSignInClose}) {
 
     return (
         <div className="overlay">
-            {errorMessage && (
-                <div className="error-popup">
-                    {errorMessage}
-                    <button className="close-popup" onClick={() => setErrorMessage("")}>
-                        &times;
-                    </button>
-                </div>
-            )}
             <div className="login-popup">
                 <button className="close-button" onClick={onClose}>&times;</button>
                 <div className="login-popup-left">

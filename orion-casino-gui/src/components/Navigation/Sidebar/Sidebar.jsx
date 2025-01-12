@@ -5,11 +5,13 @@ import ButtonGradient from "../../Buttons/ButtonGradient";
 import DepositPanel from "../../Popups/DepositPanel/DepositPanel";
 import {useAuth} from "../../../api/AuthContext";
 import LoginPanel from "../../Authorization/Login/LoginPanel";
+import WithdrawPanel from "../../Popups/WithdrawPanel/WithdrawPanel";
 
 function Sidebar() {
     const { user } = useAuth();
     const [isLoginVisible, setLoginVisible] = useState(false);
     const [isDepositVisible, setDepositVisible] = useState(false);
+    const [isWithdrawVisible, setWithdrawVisible] = useState(false);
 
     const handleDepositClick = () => {
         if (!user) {
@@ -19,6 +21,16 @@ function Sidebar() {
         }
         document.body.style.overflow = 'hidden';
     };
+
+    const handleWithdrawClick = () => {
+        if (!user) {
+            setLoginVisible(true);
+        } else {
+            setWithdrawVisible(true);
+        }
+        document.body.style.overflow = 'hidden';
+    };
+
 
     return (
             <nav className="sidebar">
@@ -44,7 +56,7 @@ function Sidebar() {
                         <div className="deposit" onClick={handleDepositClick}>
                             <SidebarButton text="Depozyt" icon="/assets/images/sidebar/deposit-icon.png"/>
                         </div>
-                        <div className="deposit">
+                        <div className="deposit" onClick={handleWithdrawClick}>
                             <SidebarButton text="Wypłata" icon="/assets/images/sidebar/deposit-icon.png"/>
                         </div>
                         <div className="leaderboard">
@@ -67,6 +79,7 @@ function Sidebar() {
                 </div>
                 {isLoginVisible && <LoginPanel onClose={() => setLoginVisible(false)} />}
                 {isDepositVisible && <DepositPanel onClose={() => setDepositVisible(false)} />}
+                {isWithdrawVisible && <WithdrawPanel onClose={() => setWithdrawVisible(false)} />}
             </nav>
     );
 }

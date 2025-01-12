@@ -6,19 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="48c19381-b979-4ad3-9ccf-0f1ed5faa5c0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-api/controllers/wallet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/controllers/wallet.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-api/models/wallet.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/models/wallet.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orion-casino-api/routes/wallet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-api/routes/wallet.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/Login/LoginPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Authorization/SignUp/SignUpPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Navigation/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/orion-casino-gui/src/components/Popups/DepositPanel/DepositPanel.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -129,7 +121,7 @@
       <workItem from="1735425031504" duration="5010000" />
       <workItem from="1736414285749" duration="19337000" />
       <workItem from="1736510872878" duration="17149000" />
-      <workItem from="1736670618347" duration="7626000" />
+      <workItem from="1736670618347" duration="14927000" />
     </task>
     <servers />
   </component>
