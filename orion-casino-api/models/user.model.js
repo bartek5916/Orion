@@ -6,11 +6,11 @@ class UserModel {
     static async registerUser(data) {
         const hashedPassword = hashPassword(data.password);
 
-        const query = `
-            INSERT INTO user (email, password, nickname, phone, role, avatar)
-            VALUES (?, ?, ?, ?, ?, ?)
-        `;
-        const values = [
+        const userQuery = `
+        INSERT INTO user (email, password, nickname, phone, role, avatar)
+        VALUES (?, ?, ?, ?, ?, ?)
+    `;
+        const userValues = [
             data.email,
             hashedPassword,
             data.nickname || null,
@@ -20,11 +20,22 @@ class UserModel {
         ];
 
         try {
-            const [results] = await db.query(query, values);
-            return results;
+            const [userResults] = await db.query(userQuery, userValues);
+
+            const userId = userResults.insertId;
+
+            const walletQuery = `
+            INSERT INTO wallet (user_id, balance)
+            VALUES (?, ?)
+        `;
+            const walletValues = [userId, 0];
+
+            await db.query(walletQuery, walletValues);
+
+            return userResults;
         } catch (err) {
-            console.error('Błąd podczas tworzenia użytkownika:', err.message);
-            throw new Error('Nie udało się utworzyć użytkownika.');
+            console.error('Błąd podczas tworzenia użytkownika i portfela:', err.message);
+            throw new Error('Nie udało się utworzyć użytkownika i portfela.');
         }
     }
 
@@ -82,10 +93,20 @@ class UserModel {
 
     static async getUserById(id) {
         const query = `
-            SELECT id, email, nickname, phone, role, avatar, created_at, updated_at
-            FROM user
-            WHERE id = ? AND deleted_at IS NULL
-        `;
+        SELECT 
+            u.id, 
+            u.email, 
+            u.nickname, 
+            u.phone, 
+            u.role, 
+            u.avatar, 
+            u.created_at, 
+            u.updated_at,
+            w.balance
+        FROM user u
+        LEFT JOIN wallet w ON u.id = w.user_id
+        WHERE u.id = ? AND u.deleted_at IS NULL
+    `;
 
         try {
             const [results] = await db.query(query, [id]);
@@ -98,6 +119,7 @@ class UserModel {
             throw err;
         }
     }
+
 }
 
 module.exports = UserModel;

@@ -3,17 +3,21 @@ import './Sidebar.css';
 import SidebarButton from "../../Buttons/SidebarButton";
 import ButtonGradient from "../../Buttons/ButtonGradient";
 import DepositPanel from "../../Popups/DepositPanel/DepositPanel";
+import {useAuth} from "../../../api/AuthContext";
+import LoginPanel from "../../Authorization/Login/LoginPanel";
 
 function Sidebar() {
+    const { user } = useAuth();
+    const [isLoginVisible, setLoginVisible] = useState(false);
     const [isDepositVisible, setDepositVisible] = useState(false);
 
     const handleDepositClick = () => {
-        setDepositVisible(true);
+        if (!user) {
+            setLoginVisible(true);
+        } else {
+            setDepositVisible(true);
+        }
         document.body.style.overflow = 'hidden';
-    };
-    const handleDepositClose = () => {
-        setDepositVisible(false);
-        document.body.style.overflow = 'auto';
     };
 
     return (
@@ -61,7 +65,8 @@ function Sidebar() {
                         </div>
                     </div>
                 </div>
-                {isDepositVisible && <DepositPanel onClose={handleDepositClose}/>}
+                {isLoginVisible && <LoginPanel onClose={() => setLoginVisible(false)} />}
+                {isDepositVisible && <DepositPanel onClose={() => setDepositVisible(false)} />}
             </nav>
     );
 }

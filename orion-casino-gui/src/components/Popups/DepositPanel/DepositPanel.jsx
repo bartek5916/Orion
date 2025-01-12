@@ -1,11 +1,13 @@
 import React, {useState} from "react";
 import './DepositPanel.css';
 import {Link} from "react-router-dom";
+import {useAuth} from "../../../api/AuthContext";
 
 function DepositPanel({onClose}) {
     const [step, setStep] = useState(1);
     const [selectedMethod, setSelectedMethod] = useState("");
     const [amount, setAmount] = useState("");
+    const { refreshUser, updateBalance } = useAuth();
 
     const paymentMethodsTop = [
         "Karta płatnicza",
@@ -38,10 +40,39 @@ function DepositPanel({onClose}) {
         setStep(2);
     };
 
-    const handleDeposit = () => {
-        console.log(`Selected method: ${selectedMethod}`);
-        console.log(`Deposit amount: ${amount}`);
-        alert("Doładowano konto!");
+    const handleDeposit = async () => {
+        if (!amount || amount <= 0) {
+            alert("Kwota musi być większa od zera.");
+            return;
+        }
+
+        try {
+            const response = await fetch('http://localhost:8080/api/wallet/deposit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include',
+                body: JSON.stringify({ amount: parseInt(amount) }),
+            });
+
+            const responseData = await response.json();
+            console.log("Response data:", responseData);
+
+            if (!response.ok) {
+                alert(`Błąd: ${responseData.error}`);
+                return;
+            }
+
+            updateBalance(responseData.balance);
+            await refreshUser();
+
+            alert(responseData.message);
+            onClose();
+        } catch (error) {
+            console.error("Błąd sieci:", error);
+            alert("Nie udało się zrealizować depozytu.");
+        }
     };
 
     const handleDepositAmount = (selectedAmount) => {

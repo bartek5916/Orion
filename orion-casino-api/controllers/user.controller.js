@@ -15,7 +15,7 @@ const userController = {
             const user = await User.getUserById(id);
             res.status(200).json(user);
         } catch (err) {
-            res.status(404).json({error: err.message});
+            res.status(404).json({ error: err.message });
         }
     },
 
@@ -41,11 +41,13 @@ const userController = {
                 message: 'Użytkownik został pomyślnie utworzony.',
             });
         } catch (err) {
+            console.log('Error message:', err.message);
             if (err.message.includes('ER_DUP_ENTRY')) {
                 return res.status(409).json({error: 'Użytkownik z podanym emailem już istnieje.'});
+            }else{
+                console.error('Błąd podczas tworzenia użytkownika:', err.message);
+                return res.status(500).json({error: 'Błąd serwera podczas tworzenia użytkownika.'});
             }
-            console.error('Błąd podczas tworzenia użytkownika:', err.message);
-            res.status(500).json({error: 'Błąd serwera podczas tworzenia użytkownika.'});
         }
     }
 };

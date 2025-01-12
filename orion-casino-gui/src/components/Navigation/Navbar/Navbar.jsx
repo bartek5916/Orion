@@ -1,5 +1,6 @@
 import './Navbar.css';
 import React, {useState} from "react";
+import {useAuth} from "../../../api/AuthContext";
 import ButtonGradient from "../../Buttons/ButtonGradient";
 import NormalButton from "../../Buttons/NormalButton";
 import RoundedButton from "../../Buttons/RoundedButton";
@@ -40,6 +41,11 @@ function Navbar() {
         document.body.style.overflow = 'auto';
     };
 
+    const { user, logout } = useAuth();
+
+    const handleLogout = () => {
+        logout();
+    };
 
     return (
         <>
@@ -61,9 +67,29 @@ function Navbar() {
                                    placeholder="Wyszukaj" icon="/assets/images/navbar/search-icon.png"/>
                     </div>
                     <div className="navbar-center-right">
-                        <NormalButton text="Zaloguj się" onClick={handleLoginClick}/>
-                        <ButtonGradient width="134px" height="42px" color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)"
-                                        text="Rejestracja" onClick={handleSignUpClick}/>
+                        {user ? (
+                            <>
+                                <NormalButton text={user.balance}/>
+                                <ButtonGradient
+                                    width="134px"
+                                    height="42px"
+                                    color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)"
+                                    text="Wyloguj"
+                                    onClick={handleLogout}
+                                />
+                            </>
+                        ) : (
+                            <>
+                                <NormalButton text="Zaloguj się" onClick={handleLoginClick}/>
+                                <ButtonGradient
+                                    width="134px"
+                                    height="42px"
+                                    color="linear-gradient(90deg, #ce63f3, #6D0DB6FF)"
+                                    text="Rejestracja"
+                                    onClick={handleSignUpClick}
+                                />
+                            </>
+                        )}
                     </div>
                     <div className="navbar-right-corner">
                         <Link to="/profile">
@@ -72,8 +98,10 @@ function Navbar() {
                         <RoundedButton src="/assets/images/navbar/settings-icon2.png"/>
                     </div>
                 </div>
-                {isLoginVisible && <LoginPanel onClose={handleLoginCLose} handleSignUpClick={handleSignUpClick} handleSignInClose={handleLoginCLose}/>}
-                {isSignUpVisible && <SignUpPanel onClose={handleSignUpClose} handleLoginClick={handleLoginClick} handleSignUpClose={handleSignUpClose}/>}
+                {isLoginVisible && <LoginPanel onClose={handleLoginCLose} handleSignUpClick={handleSignUpClick}
+                                               handleSignInClose={handleLoginCLose}/>}
+                {isSignUpVisible && <SignUpPanel onClose={handleSignUpClose} handleLoginClick={handleLoginClick}
+                                                 handleSignUpClose={handleSignUpClose}/>}
             </nav>
         </>
     );
